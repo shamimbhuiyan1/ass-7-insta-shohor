@@ -31,8 +31,12 @@ const reportPost = (id) => {
     showPosts(remainingPosts);
 };
 
+
+/* ======================
+    bug 3 text section fixed 
+    ======================== */
 const displayContent = (text) => {
-    return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+    return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
 
 const switchTab = (id) => {
