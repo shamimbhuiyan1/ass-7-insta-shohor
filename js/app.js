@@ -162,6 +162,10 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
+
+  /* ======================
+    bug 6 liked section bug fixed 
+    ======================== */
   document.getElementById("liked").innerHTML = '';
     const likedPosts = getLikedPosts();
     likedPosts.forEach((post) => {
