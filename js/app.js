@@ -17,7 +17,7 @@ const isLiked = (id) => {
 
 
     /* ======================
-    bug 1 liked section fixed 
+    bug 1 liked section bug fixed 
     ======================== */
 
 const addToLiked = (id) => {
@@ -33,7 +33,7 @@ const reportPost = (id) => {
 
 
 /* ======================
-    bug 3 text section fixed 
+    bug 3 text section bug fixed 
     ======================== */
 const displayContent = (text) => {
     return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
@@ -59,8 +59,17 @@ const switchTab = (id) => {
     }
 };
 
+
+
 const createPost = (post) => {
-    const image = post.image;
+  console.log(post);
+  const image = post.image;
+
+/* ======================
+    bug 2 profile image section bug fixed 
+    ======================== */
+  
+  const images = post.userImage;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
     div.innerHTML = `
@@ -71,7 +80,7 @@ const createPost = (post) => {
                     target="_blank"
                     class="post__avatar"
                   >
-                    <img src="${image}" alt="User Picture" />
+                    <img src="${images}" alt="User Picture" />
                   </a>
                   <a href="#" class="post__user">phero</a>
                 </div>
