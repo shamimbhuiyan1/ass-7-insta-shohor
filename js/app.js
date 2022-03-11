@@ -1,4 +1,5 @@
-let posts=[ ];
+
+let posts = [];
 
 const likedPostsId = [];
 const reportedPostsId = [];

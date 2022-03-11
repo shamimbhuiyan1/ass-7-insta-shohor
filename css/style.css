@@ -255,6 +255,10 @@ img {
   }
 }
 
+/*===============
+ bonus-section
+ ================*/
+
 .bonus-part {
   display: flex;
   justify-content: center;
